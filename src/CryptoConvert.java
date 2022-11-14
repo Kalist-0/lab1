@@ -22,7 +22,7 @@ public class CryptoConvert {
         } else if ((Objects.equals(btc, "btc")) && (Objects.equals(crypto, "sol"))) {
             total = (amount * bitcoin) / solana;
         } else if ((Objects.equals(btc, "btc")) && (Objects.equals(crypto, "tet"))) {
-            total = (amount * bitcoin) * tether;
+            total = (amount * bitcoin) / tether;
         }
         return total;
     }
